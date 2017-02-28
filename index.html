@@ -4,30 +4,47 @@
   <link href="assets/css/styles.css" type="text/css" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css?family=Maven+Pro" rel="stylesheet">
   <script type="text/javascript">
+    window.onload = function()
+    {
+      const sechand=document.querySelector('.secondhand');
+      const minhand= document.querySelector('.minhand');
+      const hourhand=document.querySelector('.hourhand');
+      function timetodegree(timequantity,number)
+      {
+        switch (number) {
+          case 1:
+            return (360 * timequantity) / 60;
+            break;
+          case 2:
+            return (360 * timequantity) / 12;
+            break;
+        }
 
-
-  var sechand=document.getElementsByClassName('secondhand');
-  var degree =0;
-  function time()
-  {
-    setTimeout(function () {
-      var date = new Date();
-      var seconds=date.getSeconds() + 6;
-
-
-      time();
-    }, 100);
-
-  }
-  time();
+      }
+     function clockticker()
+      {
+        var time= new Date();
+        var sec = time.getSeconds();
+        var min = time.getMinutes();
+        var hour= time.getHours();
+        var secdgree= timetodegree(sec,1);
+        var mindegree=timetodegree(min,1);
+        var hourdegree=timetodegree(hour,2);
+        sechand.style.transform = 'rotate('+secdgree+'deg)';
+        minhand.style.transform = 'rotate('+mindegree+'deg)';
+        hourhand.style.transform = 'rotate('+hourdegree+'deg)';
+      }
+      setInterval(clockticker, 1000);
+    }
   </script>
+
 </head>
 <body>
   <div class="clockcontainer">
+
     <div class="clockface">
+      <h1>JS Clock</h1>
       <div class="centerpoint">
-        <div class="corepoint">
-        </div>
       </div>
     <div class="secondhand">
         <div class="triangle">
@@ -37,10 +54,9 @@
     </div>
     <div class="hourhand">
     </div>
-    <p>
-      If not now, <br/>
-      When?
-    </p>
+      <p>
+        ©2017 Jay
+      </p>
     </div>
   </div>
 </body>

@@ -4,6 +4,10 @@ body {
 .clockcontainer {
   max-width: 250px;
   margin: 0 auto; }
+  .clockcontainer h1 {
+    position: relative;
+    margin-top: -50px;
+    color: #FA8731; }
   .clockcontainer .clockface {
     position: absolute;
     top: 50%;
@@ -21,23 +25,10 @@ body {
     top: 50%;
     left: 50%;
     z-index: 20;
-    height: 25px;
-    width: 25px;
-    margin-top: -12.5px;
-    margin-left: -12.5px; }
-  .clockcontainer .corepoint {
-    position: absolute;
-    border-radius: 50%;
-    background-color: #FA8731;
-    top: 50%;
-    left: 50%;
-    z-index: 20;
-    height: 10px;
-    width: 10px;
-    border-radius: 50%;
-    border: 1px dashed brown;
-    margin-top: -5px;
-    margin-left: -5px; }
+    height: 20px;
+    width: 20px;
+    margin-top: -10px;
+    margin-left: -10px; }
   .clockcontainer .secondhand {
     position: absolute;
     position: absolute;
@@ -96,10 +87,12 @@ body {
     border-radius: 50px; }
   .clockcontainer p {
     position: relative;
-    top: 170px;
+    top: 205px;
     font-size: 12px;
     text-align: center;
-    color: #4FAAEF;
+    color: silver;
+    z-index: 0;
+    opacity: 0.5;
     text-transform: uppercase;
     font-family: 'Maven Pro', sans-serif; }
 

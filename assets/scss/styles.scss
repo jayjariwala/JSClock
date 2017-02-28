@@ -13,6 +13,12 @@ body
   max-width: 250px;
   margin: 0 auto;
 
+  h1
+  {
+    position: relative;
+    margin-top: -50px;
+    color:$clockcore;
+  }
   .clockface
   {
     position: absolute;
@@ -27,23 +33,18 @@ body
     }
   .centerpoint
   {
-    @include clockpoint;
-    height: 25px;
-    width: 25px;
-    margin-top:-12.5px;
-   margin-left:-12.5px;
-   }
-  .corepoint
-  {
-    @include clockpoint;
-    height: 10px;
-    width: 10px;
+    position: absolute;
     border-radius: 50%;
-    border: 1px dashed brown;
-    margin-top: -5px;
-    margin-left:-5px;
+    background-color: $clockcore;
+    top: 50%;
+    left: 50%;
+    z-index: 20;
+    height: 20px;
+    width: 20px;
+    margin-top:-10px;
+   margin-left:-10px;
+   }
 
-  }
   .secondhand
   {
   @include clockhand(145px, 3.0px,-1.25px,-110.50px,5);
@@ -76,10 +77,12 @@ body
   p
   {
    position: relative;
-   top: 170px;
+   top: 205px;
    font-size: 12px;
    text-align: center;
-   color: #4FAAEF;
+   color:silver;
+   z-index: 0;
+   opacity: 0.5;
    text-transform: uppercase;
    font-family: 'Maven Pro', sans-serif;
   }
