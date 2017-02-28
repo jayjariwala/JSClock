@@ -1,0 +1,24 @@
+@mixin clockpoint {
+  position: absolute;
+  border-radius: 50%;
+  background-color: $clockcore;
+  top: 50%;
+  left: 50%;
+  z-index: 20;
+}
+
+@mixin clockhand ($height,$width,$leftmargin,$topmargin,$zindex) {
+  position: absolute;
+  position: absolute;
+  height: $height;
+  left:50%;
+  margin-left: $leftmargin;
+  top:50%;
+  margin-top:$topmargin;
+  transform: rotate(0deg);
+  transform-origin:35% 75.5%;
+  border-radius: 50px 50px;
+  width: $width;
+  background: #8F907A;
+  z-index:$zindex;
+}

@@ -1,0 +1,47 @@
+<html>
+<head>
+  <title>JS Clock</title>
+  <link href="assets/css/styles.css" type="text/css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Maven+Pro" rel="stylesheet">
+  <script type="text/javascript">
+
+
+  var sechand=document.getElementsByClassName('secondhand');
+  var degree =0;
+  function time()
+  {
+    setTimeout(function () {
+      var date = new Date();
+      var seconds=date.getSeconds() + 6;
+
+
+      time();
+    }, 100);
+
+  }
+  time();
+  </script>
+</head>
+<body>
+  <div class="clockcontainer">
+    <div class="clockface">
+      <div class="centerpoint">
+        <div class="corepoint">
+        </div>
+      </div>
+    <div class="secondhand">
+        <div class="triangle">
+        </div>
+    </div>
+    <div class="minhand">
+    </div>
+    <div class="hourhand">
+    </div>
+    <p>
+      If not now, <br/>
+      When?
+    </p>
+    </div>
+  </div>
+</body>
+</html>

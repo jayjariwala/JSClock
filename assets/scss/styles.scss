@@ -1,0 +1,86 @@
+$background:#424734;
+$clockbackground:#3C412C  ;
+$min_hrhand:#FCFFE6;
+$clockcore:#FA8731;
+
+@import "_mixin";
+body
+{
+  background-color: $background;
+}
+.clockcontainer
+{
+  max-width: 250px;
+  margin: 0 auto;
+
+  .clockface
+  {
+    position: absolute;
+    top: 50%;
+    margin-top: -100px;
+    height: 250px;
+    width: 250px;
+    background-color: $clockbackground;
+    border-radius: 50%;
+    border-color: silver;
+    text-align: center;
+    }
+  .centerpoint
+  {
+    @include clockpoint;
+    height: 25px;
+    width: 25px;
+    margin-top:-12.5px;
+   margin-left:-12.5px;
+   }
+  .corepoint
+  {
+    @include clockpoint;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    border: 1px dashed brown;
+    margin-top: -5px;
+    margin-left:-5px;
+
+  }
+  .secondhand
+  {
+  @include clockhand(145px, 3.0px,-1.25px,-110.50px,5);
+  transform-origin:35% 75.5%;
+  }
+  .minhand
+  {
+    @include clockhand (100px,8px,-4px,-99px,3);
+    background-color: white;
+    transform-origin:bottom center;
+  }
+  .hourhand
+  {
+    @include clockhand (80px,10px,-5px,-80px,0);
+    transform-origin:bottom center;
+    background-color: white;
+  }
+
+  .triangle
+  {
+    position: absolute;
+    height: 10px;
+    top:0;
+    width: 3.0px;
+    margin-left: 0.24px;
+    margin-top: -5px;
+    background-color: $clockcore;
+    border-radius: 50px;
+  }
+  p
+  {
+   position: relative;
+   top: 170px;
+   font-size: 12px;
+   text-align: center;
+   color: #4FAAEF;
+   text-transform: uppercase;
+   font-family: 'Maven Pro', sans-serif;
+  }
+}

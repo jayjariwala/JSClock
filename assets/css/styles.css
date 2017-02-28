@@ -1,0 +1,106 @@
+body {
+  background-color: #424734; }
+
+.clockcontainer {
+  max-width: 250px;
+  margin: 0 auto; }
+  .clockcontainer .clockface {
+    position: absolute;
+    top: 50%;
+    margin-top: -100px;
+    height: 250px;
+    width: 250px;
+    background-color: #3C412C;
+    border-radius: 50%;
+    border-color: silver;
+    text-align: center; }
+  .clockcontainer .centerpoint {
+    position: absolute;
+    border-radius: 50%;
+    background-color: #FA8731;
+    top: 50%;
+    left: 50%;
+    z-index: 20;
+    height: 25px;
+    width: 25px;
+    margin-top: -12.5px;
+    margin-left: -12.5px; }
+  .clockcontainer .corepoint {
+    position: absolute;
+    border-radius: 50%;
+    background-color: #FA8731;
+    top: 50%;
+    left: 50%;
+    z-index: 20;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    border: 1px dashed brown;
+    margin-top: -5px;
+    margin-left: -5px; }
+  .clockcontainer .secondhand {
+    position: absolute;
+    position: absolute;
+    height: 145px;
+    left: 50%;
+    margin-left: -1.25px;
+    top: 50%;
+    margin-top: -110.5px;
+    transform: rotate(0deg);
+    transform-origin: 35% 75.5%;
+    border-radius: 50px 50px;
+    width: 3px;
+    background: #8F907A;
+    z-index: 5;
+    transform-origin: 35% 75.5%; }
+  .clockcontainer .minhand {
+    position: absolute;
+    position: absolute;
+    height: 100px;
+    left: 50%;
+    margin-left: -4px;
+    top: 50%;
+    margin-top: -99px;
+    transform: rotate(0deg);
+    transform-origin: 35% 75.5%;
+    border-radius: 50px 50px;
+    width: 8px;
+    background: #8F907A;
+    z-index: 3;
+    background-color: white;
+    transform-origin: bottom center; }
+  .clockcontainer .hourhand {
+    position: absolute;
+    position: absolute;
+    height: 80px;
+    left: 50%;
+    margin-left: -5px;
+    top: 50%;
+    margin-top: -80px;
+    transform: rotate(0deg);
+    transform-origin: 35% 75.5%;
+    border-radius: 50px 50px;
+    width: 10px;
+    background: #8F907A;
+    z-index: 0;
+    transform-origin: bottom center;
+    background-color: white; }
+  .clockcontainer .triangle {
+    position: absolute;
+    height: 10px;
+    top: 0;
+    width: 3.0px;
+    margin-left: 0.24px;
+    margin-top: -5px;
+    background-color: #FA8731;
+    border-radius: 50px; }
+  .clockcontainer p {
+    position: relative;
+    top: 170px;
+    font-size: 12px;
+    text-align: center;
+    color: #4FAAEF;
+    text-transform: uppercase;
+    font-family: 'Maven Pro', sans-serif; }
+
+/*# sourceMappingURL=styles.css.map */
