@@ -9,6 +9,7 @@
       const sechand=document.querySelector('.secondhand');
       const minhand= document.querySelector('.minhand');
       const hourhand=document.querySelector('.hourhand');
+      const handpoint=document.querySelector('.triangle');
       function timetodegree(timequantity,number)
       {
         switch (number) {
@@ -31,8 +32,12 @@
         var mindegree=timetodegree(min,1);
         var hourdegree=timetodegree(hour,2);
         sechand.style.transform = 'rotate('+secdgree+'deg)';
+        sechand.style.background = '#8F907A';
+        handpoint.style.background = "#FA8731";
         minhand.style.transform = 'rotate('+mindegree+'deg)';
+        minhand.style.background = 'white';
         hourhand.style.transform = 'rotate('+hourdegree+'deg)';
+        hourhand.style.background = 'white';
       }
       setInterval(clockticker, 1000);
     }

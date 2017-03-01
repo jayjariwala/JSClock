@@ -41,7 +41,7 @@ body {
     transform-origin: 35% 75.5%;
     border-radius: 50px 50px;
     width: 3px;
-    background: #8F907A;
+    background: transparent;
     z-index: 5;
     transform-origin: 35% 75.5%; }
   .clockcontainer .minhand {
@@ -56,9 +56,8 @@ body {
     transform-origin: 35% 75.5%;
     border-radius: 50px 50px;
     width: 8px;
-    background: #8F907A;
+    background: transparent;
     z-index: 3;
-    background-color: white;
     transform-origin: bottom center; }
   .clockcontainer .hourhand {
     position: absolute;
@@ -72,10 +71,9 @@ body {
     transform-origin: 35% 75.5%;
     border-radius: 50px 50px;
     width: 10px;
-    background: #8F907A;
+    background: transparent;
     z-index: 0;
-    transform-origin: bottom center;
-    background-color: white; }
+    transform-origin: bottom center; }
   .clockcontainer .triangle {
     position: absolute;
     height: 10px;
@@ -83,7 +81,7 @@ body {
     width: 3.0px;
     margin-left: 0.24px;
     margin-top: -5px;
-    background-color: #FA8731;
+    background-color: transparent;
     border-radius: 50px; }
   .clockcontainer p {
     position: relative;
