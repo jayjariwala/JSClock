@@ -1,5 +1,5 @@
 $background:#424734;
-$clockbackground:#3C412C  ;
+$clockbackground:#3C412C;
 $min_hrhand:#FCFFE6;
 $clockcore:#FA8731;
 
@@ -8,6 +8,7 @@ body
 {
   background-color: $background;
 }
+
 .clockcontainer
 {
   max-width: 250px;
@@ -19,6 +20,7 @@ body
     margin-top: -50px;
     color:$clockcore;
   }
+
   .clockface
   {
     position: absolute;
@@ -30,7 +32,8 @@ body
     border-radius: 50%;
     border-color: silver;
     text-align: center;
-    }
+  }
+
   .centerpoint
   {
     position: absolute;
@@ -42,19 +45,21 @@ body
     height: 20px;
     width: 20px;
     margin-top:-10px;
-   margin-left:-10px;
-   }
+    margin-left:-10px;
+  }
 
   .secondhand
   {
-  @include clockhand(145px, 3.0px,-1.25px,-110.50px,5);
-  transform-origin:35% 75.5%;
+    @include clockhand(145px, 3.0px,-1.25px,-110.50px,5);
+    transform-origin:35% 75.5%;
   }
+
   .minhand
   {
     @include clockhand (100px,8px,-4px,-99px,3);
     transform-origin:bottom center;
   }
+
   .hourhand
   {
     @include clockhand (80px,10px,-5px,-80px,0);
@@ -72,6 +77,7 @@ body
     background-color: transparent;
     border-radius: 50px;
   }
+
   p
   {
    position: relative;
@@ -84,4 +90,5 @@ body
    text-transform: uppercase;
    font-family: 'Maven Pro', sans-serif;
   }
+
 }

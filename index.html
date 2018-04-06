@@ -4,12 +4,14 @@
   <link href="assets/css/styles.css" type="text/css" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css?family=Maven+Pro" rel="stylesheet">
   <script type="text/javascript">
+
     window.onload = function()
     {
       const sechand=document.querySelector('.secondhand');
       const minhand= document.querySelector('.minhand');
       const hourhand=document.querySelector('.hourhand');
       const handpoint=document.querySelector('.triangle');
+      
       function timetodegree(timequantity,number)
       {
         switch (number) {
@@ -20,8 +22,8 @@
             return (360 * timequantity) / 12;
             break;
         }
-
       }
+
      function clockticker()
       {
         var time= new Date();
@@ -39,6 +41,7 @@
         hourhand.style.transform = 'rotate('+hourdegree+'deg)';
         hourhand.style.background = 'white';
       }
+      
       setInterval(clockticker, 1000);
     }
   </script>
@@ -46,21 +49,19 @@
 </head>
 <body>
   <div class="clockcontainer">
-
     <div class="clockface">
-      <h1>JS Clock</h1>
       <div class="centerpoint">
       </div>
-    <div class="secondhand">
+      <div class="secondhand">
         <div class="triangle">
         </div>
-    </div>
-    <div class="minhand">
-    </div>
-    <div class="hourhand">
-    </div>
+      </div>
+      <div class="minhand">
+      </div>
+      <div class="hourhand">
+      </div>
       <p>
-        ©2017 Jay
+      ©2017 Jay
       </p>
     </div>
   </div>
